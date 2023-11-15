@@ -34,15 +34,15 @@ export default function App() {
   const colorScheme = useColorScheme();
   const createTwoButtonAlert = () =>
     Alert.alert("Alert Title", "My Alert Msg", [
-      {
-        text: "Cancel",
-        onPress: () => Alert.prompt("Cancel Pressed"),
-      },
-      { text: "OK", onPress: () => console.log("OK Pressed") },
-      { text: "more", onPress: () => {}},
-      { text: "fourth", onPress: () => {}},
-      { text: "five", onPress: () => {}},
-      { text: "six", onPress: () => {}},
+      // {
+      //   text: "Cancel",
+      //   onPress: () => Alert.prompt("Cancel Pressed"),
+      // },
+      // { text: "OK", onPress: () => console.log("OK Pressed") },
+      // { text: "more", onPress: () => {}},
+      // { text: "fourth", onPress: () => {}},
+      // { text: "five", onPress: () => {}},
+      // { text: "six", onPress: () => {}},
     ]);
 
   // fadeAnim will be used as the value for opacity. Initial Value: 0
@@ -68,7 +68,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-       <Button title={"Button Alert"} onPress={createTwoButtonAlert} />
+       <Button title={"Button Alert TypeScript"} onPress={createTwoButtonAlert} />
       <Text
         style={{
           color: colorScheme === "lgiht" ? "#000" : "#fff",
